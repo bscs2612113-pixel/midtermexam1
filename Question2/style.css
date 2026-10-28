@@ -1,0 +1,14 @@
+body{
+    display: flex;
+
+}
+#close{
+    display:none;
+}
+#close:has(#class:checked).close{
+    display: none;
+
+}
+#close:has(#class:checked)#close{
+    display: block;
+}
